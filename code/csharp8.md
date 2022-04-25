@@ -13,7 +13,7 @@ if (person?.MiddleName is { } person)
 {
     // Code ...
 }
-```csharp
+```
 The `null` check for `FirstName` property can be embedded  in pattern matching:
 ```csharp
 if (person is {FirstName.Length: var length})
@@ -54,7 +54,7 @@ private static bool IsNullOrEmpty(string? personMiddleName)
 ```
 
 The code below causes warning about possible null reference.
-![Null reference](pics/nullReferenceWarning.png)
+![Null reference 2](pics/nullReferenceWarning.png)
 
 In order to fix the warning `NotNullWhenFalse` attribute must be used.
 
@@ -62,7 +62,7 @@ In order to fix the warning `NotNullWhenFalse` attribute must be used.
 private static bool IsNullOrEmpty([NotNullWhen(false)]string? personMiddleName)
 ```
 
-`string.IsNullOrEmpty` is written in the same way:
+.NET `string.IsNullOrEmpty` implementation is written in the same way:
 
 ```csharp
 public static bool IsNullOrEmpty([NotNullWhen(false)] string? value)
