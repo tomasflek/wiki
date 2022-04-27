@@ -15,14 +15,21 @@ if (person?.MiddleName is { } person)
     // Code ...
 }
 ```
-The `null` check for `FirstName` property can be embedded  in pattern matching:
+The `null` check for `FirstName` property can be embedded  in pattern matching, also `FirstName.Length` can be stored into new variable:
 ```csharp
-if (person is {FirstName.Length: var length})
+if (person?.FirstName is { Length: var length })
 {
     return length;
 }
 return 0;
 ```
+
+Pass nultiple property values into new variables in pattern matching:
+```csharp
+if (pperson is { FirstName: var firstName, LastName: var lastName})
+    Console.WriteLine($"{firstName} {lastName}");
+```
+
 ### Switch statement (previeous versions of C#)
 
 ``` csharp
@@ -146,5 +153,57 @@ private static async IAsyncEnumerable<string> GetEntries()
 			await Task.Delay(2500);
 		yield return i.ToString();
 	}
+}
+```
+## Indices and Ranges (C# 8)
+```csharp
+string[] words =
+{
+			    // Index from start     indexf from end
+	"The",      // 0                    ^9
+    "quick",    // 1                    ^8
+    "brown",    // 2                    ^7
+    "fox",      // 3                    ^6
+    "jumped",   // 4                    ^5
+    "over",     // 5                    ^4  
+    "the",      // 6                    ^3
+    "lazy",     // 7                    ^2
+    "dog"       // 8                    ^1
+};
+
+// Result is "The quick brown fox" - index number 4 is exluded.
+Console.WriteLine(string.Join(' ', words[0..4]));
+
+// Result is "lazy dog"
+Console.WriteLine(string.Join(' ', words[^2..^0]));
+
+// Write all words.
+Console.WriteLine(string.Join(' ', words[..]));
+
+// Write all words up to index 3 (index 4 is not includede).
+Console.WriteLine(string.Join(' ', words[..4]));
+
+// Write all words starting from index 6 - "the lazy dog".
+Console.WriteLine(string.Join(' ', words[6..]));
+
+// ^x = words.Length - x
+var x = 5;
+Console.WriteLine(string.Join(' ', words[^x]));
+Console.WriteLine(string.Join(' ', words[words.Length - x]));
+
+// Range object ussage.
+Range range = 3..5;
+Console.WriteLine(string.Join(' ', words[range]));
+```
+
+## Using statement (C# 8)
+```csharp
+HttpWebRequest req = ...;
+
+using (var resp = req.GetResponse())
+using (var stream = resp.GetResponseStream())
+using (var reader = new StreamReader(stream))
+{
+    TextBox1.Text = reader.ReadToEnd(); // or whatever
 }
 ```
