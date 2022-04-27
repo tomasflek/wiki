@@ -207,3 +207,40 @@ using (var reader = new StreamReader(stream))
     TextBox1.Text = reader.ReadToEnd(); // or whatever
 }
 ```
+
+## Static local functions
+The ussage is simmilar as in C# 7. The difference is that a function is marked as static, which cause that the function cannot use variables from outer scope.
+
+Non static implementation:
+```csharp
+string text = "text";
+
+string ToUpperCase()
+{
+    return text.ToUpper();
+}
+```
+
+Static implementation:
+```csharp
+string text = "text";
+
+static string ToUpperCase(string text)
+{
+    return text.ToUpper();
+}
+```
+
+## Null coalescing assignment (C# 8)
+
+In previous C# code we had to write following code:
+```csharp
+var names =  null;
+if (names is null)
+	names = new List<string>();
+```
+In C# 8 we can simplify the code:
+```csharp
+List<string> names = null;
+names ??= new List<string>();
+```
