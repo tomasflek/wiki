@@ -49,6 +49,23 @@ switch (fruit)
 }
 ```
 
+Or
+
+```csharp
+switch(myValue)
+{
+    case int value when value <= 0:
+        Console.WriteLine("Less than or equal to 0");
+        break;
+    case int value when value > 0 && value <= 10:
+        Console.WriteLine("More than 0 but less than or equal to 10");
+        break;
+    default:
+        Console.WriteLine("More than 10");
+        break;
+}
+```
+
 ### Switch expression
 ```csharp
 Fruit fruit = new Apple(Color.Green);
@@ -61,6 +78,16 @@ string text = fruit switch
 ```
 
 `_` stands for whatever type, even `null`.
+
+```csharp
+var message = myValue switch
+{
+    int value when value <= 0 => "Less than or equal to 0",
+    int value when value > 0 && value <= 10 => "More than 0 but less than or equal to 10",
+    _ => "More than 10"
+};
+Console.WriteLine(message);
+```
 
 It can be also used as a result of a`property`:
 
