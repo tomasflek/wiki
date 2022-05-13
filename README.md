@@ -4,3 +4,4 @@
 - [C# 9](/code/csharp9.md)
 - [Visual Studio](/visualstudio.md)
 - [Other tips and tricks](/others.md)
+- [FuncSharp](/funcsharp.md)
