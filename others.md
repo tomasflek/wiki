@@ -19,3 +19,8 @@
 
 
 For more info see [keybaord shortcuts pages](https://www.jetbrains.com/help/rider/mastering_keyboard_shortcuts.html).
+## GitHub
+
+In order to show repository content in **Visual Studio Code**, press `.` key.
+
+Markdown file can be previewd by pressing `Ctrl+Shift+V` keyboards.
