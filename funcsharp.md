@@ -1,6 +1,6 @@
 # FuncSharpt and other methods ...
 
-## `Map` ussage for `int`
+## `Match` ussage for `int`
 
 ``` csharp
 int b = 10;
@@ -12,7 +12,7 @@ var isTen = b.Match
 );
 ```
 
-## `Map` ussage for `IOption<int>`
+## `Match` ussage for `IOption<int>`
 
 ``` csharp
 IOption<int> customOption = Option.Create(20);
@@ -26,7 +26,7 @@ IOption<string> customOptionString = Option.Create("test string");
 bool getOptionString = customOptionString.Match(t => t.Equals("sdf"), _ => false);
 ```
 
-## `Map` ussage for a `class` whith derives from `Coproduct`
+## `Match` ussage for a `class` whith derives from `Coproduct`
 
 ``` csharp
 Job job = new Job(new FinishedJob());
@@ -47,7 +47,7 @@ private class Job : Coproduct3<InProgressJob, FinishedJob, PendingJob>
     private class PendingJob { }
     private class FinishedJob { }
 ```
-## `Map` ussage for `IOption<PendingJob>`
+## `Match` ussage for `IOption<PendingJob>`
 
 ``` csharp
 IOption<PendingJob> pendingJobObption = Option.Create(new PendingJob());

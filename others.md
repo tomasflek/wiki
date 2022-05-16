@@ -16,6 +16,7 @@
 | Move line up | `Alt + ↑` ||
 | Move line down | `Alt + ↓` ||
 | Open settings | `Ctrl + Alt + S` ||
+| Open Bookmark windows | `Alt + 2` ||
 
 
 For more info see [keybaord shortcuts pages](https://www.jetbrains.com/help/rider/mastering_keyboard_shortcuts.html).
