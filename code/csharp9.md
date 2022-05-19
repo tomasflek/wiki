@@ -1,9 +1,9 @@
 # What's new in C# 9
 
 ## Record types
-tbd ...
-
-
+Record is a reference type, which acts like value type.
+Record is immutable (the values in a record cannot be changed).
+There are ways, how to change values inside a record, it is possible, but is is sort of violating the design of records.
 
 ## Top level statement
 
@@ -69,7 +69,7 @@ PersonModel personModel2 =  new (10, "Tomas");
 PersonModel personModel3 = new () { Id = 1, Name = "Tomas"};
 ```
 
-## Relational nad logical pattern matching
+## Relational and logical pattern matching
 
 Relation pattern matching are `>`, `<`, `>=` and `<=`.
 Logical pattern matching are `and`, `or` and `not`.
