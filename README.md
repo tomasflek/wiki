@@ -4,4 +4,4 @@
 - [C# 9](/code/csharp9.md)
 - [Visual Studio](/visualstudio.md)
 - [Shortcuts](/shortcuts.md)
-- [FuncSharp](/funcsharp.md)
+- [Mews](/mews.md)
