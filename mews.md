@@ -65,9 +65,10 @@ private class Job : Coproduct3<InProgressJob, FinishedJob, PendingJob>
     public Job(FinishedJob secondValue) : base(secondValue) { }
     public Job(PendingJob thirdValue) : base(thirdValue) { }
 }
-    private class InProgressJob { }
-    private class PendingJob { }
-    private class FinishedJob { }
+
+private class InProgressJob { }
+private class PendingJob { }
+private class FinishedJob { }
 ```
 #### `Match` ussage for `IOption<PendingJob>`
 
