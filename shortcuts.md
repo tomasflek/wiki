@@ -13,6 +13,7 @@
 |----------|:-------------:|:-------------:|
 | Run | `Ctrl + F5` ||
 | Debug | `Alt + F5` ||
+| Open breakpoint window | `Ctrl + Alt + B` ||
 
 ### Manage projects and solutions
 | Action   |      Rider shortcut | VS + Resharper ShortCut |

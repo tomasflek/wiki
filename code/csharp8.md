@@ -1,4 +1,16 @@
 # What's new in C# 8
+
+[Ussage of `{}`](#ussage-of)  
+[Swith statement](#switch-statement-previeous-versions-of-c)  
+[Switch expression](#switch-expression)  
+[Switch expression with property patterns](#switch-expression-with-property-patterns-c-8)  
+[Suppress *Dereference of a possibly null reference warning*](#suppress-dereference-of-a-possibly-null-reference-warning)  
+[Attribute for nullability](#attribute-for-nullability)  
+[IAsyncEnumerable interface](#iasyncenumerable-interface)  
+[Using statement](#using-statement-c-8)  
+[Static local functions](#static-local-functions)  
+[Null coalescing assignment](#null-coalescing-assignment-c-8)  
+
 ## Pattern matching
 ### Ussage of `{}`
 Following code can be simplified by using  `{}`:
