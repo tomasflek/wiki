@@ -3,6 +3,7 @@
 [FuncSharp](#funcsharp)  
 [Match](#match)  
 [Map](#map)  
+[GetOrDefault](#getordefault)  
 [Extensions](#extensions)  
 
 ## FuncSharp
@@ -89,7 +90,7 @@ resultOption.Match(
     );
 ```
 
-To sum  two `IOptions<int>`:
+Sum two `IOptions<int>`:
 
 ``` csharp
 IOption<int> fiveOption = Option.Create(5);
@@ -103,6 +104,17 @@ resultFlatten.Match(hasValue => Console.WriteLine(hasValue), _ => Console.WriteL
 or `Flatten`ussage can be replaced by following
 ``` csharp
 IOption<int> resultOption = fiveOption.FlatMap(five => tenOption.Map(ten => ten + five));
+```
+
+### `GetOrDefault`
+
+Sum two `IOptions<int>`:
+
+``` csharp
+IOption<int> fiveOption = Option.Create(5);
+IOption<int> tenOption = Option.Create(10);
+
+int result = fiveOption.GetOrDefault() + fiveOption.GetOrDefault();
 ```
 
 ## Extensions
