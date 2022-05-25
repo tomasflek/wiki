@@ -1,5 +1,12 @@
 # What's new in C# 9
 
+[Record types](#record-types)  
+[Top level statement](#top-level-statement)  
+[Init only setter](#init-only-setter)  
+[Object instantiation](#object-instantiation)  
+[Relational and logical pattern matching](#relational-and-logical-pattern-matching)  
+[Is not in pattern matching](#is-not-in-pattern-matching)  
+
 ## Record types
 Record is a reference type, which acts like value type.
 Record is immutable (the values in a record cannot be changed).
