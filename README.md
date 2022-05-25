@@ -5,4 +5,4 @@
 - [Visual Studio](/visualstudio.md)
 - [Shortcuts](/shortcuts.md)
 - [Mews](/mews.md)
-- [Design Patternw](/code/designPatterns.md)
+- [Design Patterns](/code/designPatterns.md)
