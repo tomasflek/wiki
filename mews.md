@@ -124,7 +124,7 @@ int result = fiveOption.GetOrDefault() + fiveOption.GetOrDefault();
 
 #### `MapRef` for null check
 
-Used if a variable can be null.
+Used if a variable can be `null`.
 
 ``` csharp
 // StorageData can be null
