@@ -7,3 +7,4 @@
 - [Mews](/mews.md)
 - [Design Patterns](/code/designPatterns.md)
 - [Other notes](/code/other.md)
+- [Links](/links.md)
