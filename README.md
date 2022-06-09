@@ -6,5 +6,6 @@
 - [Shortcuts](/shortcuts.md)
 - [Mews](/mews.md)
 - [Design Patterns](/code/designPatterns.md)
-- [Other notes](/code/other.md)
+- [Code samples](/code/codeSamples.md)
+- [Other notes](/other.md)
 - [Links](/links.md)
