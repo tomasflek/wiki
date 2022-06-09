@@ -2,8 +2,11 @@
 
 ## Write Minidump file programmatically
 
+`MiniDumpWriteDump` function [description](https://docs.microsoft.com/en-us/windows/win32/api/minidumpapiset/nf-minidumpapiset-minidumpwritedump).  
+`MINIDUMP_TYPE` enumeration [description](https://docs.microsoft.com/en-us/windows/win32/api/minidumpapiset/ne-minidumpapiset-minidump_type).
+
 ``` csharp
-public enum Type : uint
+public enum MinidumpType : uint
 		{
 			// From dbghelp.h:
 			MiniDumpNormal = 0x00000000,
@@ -59,7 +62,7 @@ public enum Type : uint
 		[DllImport("kernel32.dll", EntryPoint = "GetCurrentThreadId", ExactSpelling = true)]
 		static extern uint GetCurrentThreadId();
 		
-		public static bool Write(string fileName, Type dumpTyp)
+		public static bool Write(string fileName, MinidumpType dumpType)
 		{
 			using (var fs = new FileStream(fileName, FileMode.Create, FileAccess.Write, FileShare.None))
 			{
@@ -72,9 +75,9 @@ public enum Type : uint
 				exp.ExceptionPointers = Marshal.GetExceptionPointers();
 				bool bRet = false;
 				if (exp.ExceptionPointers == IntPtr.Zero)
-					bRet = MiniDumpWriteDump(currentProcessHandle, currentProcessId, fs.SafeFileHandle, (uint)dumpTyp, IntPtr.Zero, IntPtr.Zero, IntPtr.Zero);
+					bRet = MiniDumpWriteDump(currentProcessHandle, currentProcessId, fs.SafeFileHandle, (uint)dumpType, IntPtr.Zero, IntPtr.Zero, IntPtr.Zero);
 				else
-					bRet = MiniDumpWriteDump(currentProcessHandle, currentProcessId, fs.SafeFileHandle, (uint)dumpTyp, ref exp, IntPtr.Zero, IntPtr.Zero);
+					bRet = MiniDumpWriteDump(currentProcessHandle, currentProcessId, fs.SafeFileHandle, (uint)dumpType, ref exp, IntPtr.Zero, IntPtr.Zero);
 				return bRet;
 			}
 		}
