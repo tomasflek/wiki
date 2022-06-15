@@ -8,7 +8,6 @@
 ``` csharp
 public enum MinidumpType : uint
 		{
-			// From dbghelp.h:
 			MiniDumpNormal = 0x00000000,
 			MiniDumpWithDataSegs = 0x00000001,
 			MiniDumpWithFullMemory = 0x00000002,
@@ -81,4 +80,28 @@ public enum MinidumpType : uint
 				return bRet;
 			}
 		}
+```
+
+## Functional way for null check
+``` csharp
+var test = DataContext?.Message;
+```
+can be replaced by
+
+``` csharp
+var text = DataContext.IfDefined(m => m.Message);
+```
+``` csharp
+public static TResult IfDefined<T, TResult>(this T x, Func<T, TResult> f, Func<TResult> otherwise = null)
+{
+    if (x != null)
+    {
+        return f(x);
+    }
+    if (otherwise != null)
+    {
+        return otherwise();
+    }
+    return default(TResult);
+}
 ```

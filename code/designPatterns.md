@@ -1,4 +1,8 @@
-# Behaviour Design patterns
+# Singleton
+
+[Link](https://csharpindepth.com/Articles/Singleton) to different singleton implementation (thread safe, etc ...)
+
+# Behavior Design patterns
 
 ## Strategy pattern
 
