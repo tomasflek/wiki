@@ -105,3 +105,56 @@ public static TResult IfDefined<T, TResult>(this T x, Func<T, TResult> f, Func<T
     return default(TResult);
 }
 ```
+
+## IHttpClientFactory with DI
+
+Following nuget packages are required
+> Microsoft.Extensions.DependencyInjection  
+> Microsoft.Extensions.Http  
+> System.Net.Http  
+
+First we have to create new instance of `ServiceCollection` and register services.
+
+``` csharp
+serviceProvider = new ServiceCollection()
+	.AddHttpClient()
+	.AddTransient<IRestApiClient, RestApiClient>()
+	.BuildServiceProvider();
+```
+
+`IRestApiClient` interface implementation:
+``` csharp
+public interface IRestApiClient
+{
+	Task<string> PostMessageAsync(string data);
+}
+```
+
+`RestApiClient` class implementation
+
+``` csharp
+public class RestApiClient : IRestApiClient
+{
+    private IHttpClientFactory _httpClientFactory;    
+    private ILogger<RestApiClient> _logger;
+
+    public RestApiClient(IHttpClientFactory httpClientFactory, ILogger<RestApiClient> logger)
+    {
+        _logger = logger;
+        _httpClientFactory = httpClientFactory;
+    }
+    
+    public async Task<string> PostMessageAsync(string data)
+    {
+		// Get HttpClient instance.
+        var client = _httpClientFactory.CreateClient();
+		...
+    }
+}
+```
+
+Then finally if we want to create instance of `RestApiClient` class, we call `GetService`. Behind the scene the `Activator` creates instance of `RestApiClass`.
+
+``` csharp
+var apiClient = serviceProvider.GetService<IRestApiClient>();
+```
