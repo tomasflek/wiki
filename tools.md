@@ -8,9 +8,15 @@
 
 ## Editors and IDE
 * Notepad++
-    ```
-    reg add "HKLM\Software\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\notepad.exe" /v "Debugger" /t REG_SZ /d "\"%ProgramFiles(x86)%\Notepad++\notepad++.exe\" -notepadStyleCmdline -z" /f
-    ```
+
+x86
+```
+reg add "HKLM\Software\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\notepad.exe" /v "Debugger" /t REG_SZ /d "\"%ProgramFiles(x86)%\Notepad++\notepad++.exe\" -notepadStyleCmdline -z" /f
+```
+x64
+```
+REG ADD “HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\notepad.exe” /v “Debugger” /t REG_SZ /d “\”%ProgramFiles%\Notepad++\notepad++.exe\” -notepadStyleCmdline -z” /f
+```
 
 * [Visual Studio Code](https://code.visualstudio.com/)
 * [Visual Studio](https://visualstudio.microsoft.com/) + [Resharper](https://www.jetbrains.com/resharper/)
