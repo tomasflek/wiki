@@ -57,5 +57,5 @@ Markdown file can be previewd by pressing `Ctrl+Shift+V` keyboards.
 | Close tab |  `Ctrl + W` |
 | Search |  `Alt + F7` |
 
-###Other commands:
+### Other commands:  
 **Copy full name to clipboard**: Configuration - Options - Misc. - Redefine hotkeys, there you can assign a shortcut for cm_CopyFullNamesToClip, it's under [__Clipboard__].
