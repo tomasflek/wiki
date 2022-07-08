@@ -46,3 +46,12 @@ For more info see [keybaord shortcuts pages](https://www.jetbrains.com/help/ride
 In order to show repository content in **Visual Studio Code**, press `.` key.
 
 Markdown file can be previewd by pressing `Ctrl+Shift+V` keyboards.
+
+## Total commander
+
+| Action   |      shortcut |
+|----------|:-------------:|
+| Show all files in current dir and all subdirs |  `Ctrl + B` |
+| Quick filter |  `Ctrl + S` |
+| New tab |  `Ctrl + T` |
+| Close tab |  `Ctrl + W` |
