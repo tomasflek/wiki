@@ -33,8 +33,8 @@
 | Format code | `Ctrl + K , D` or `Ctrl + K , Ctrl + D` |
 | Move line up | `Alt + ↑` ||
 | Move line down | `Alt + ↓` ||
-| Expanse all | `Ctrl + M, A` or `Ctrl + M, Ctrl + A` ||
-| Collapse all | `Ctrl + M + X` or `Ctrl + M, Ctrl + X` ||
+| Expanse all | `Ctrl + M, A` or `Ctrl + M, Ctrl + A` | `Ctrl + M, Ctrl + A` |
+| Collapse all | `Ctrl + M + X` or `Ctrl + M, Ctrl + X` |  `Ctrl + M, Ctrl + O` |
 
 | Action   |      Rider shortcut | VS + Resharper ShortCut |
 |----------|:-------------:|:-------------:|
@@ -44,7 +44,6 @@
 | Run | `Ctrl + F5` ||
 | Debug | `Alt + F5` ||
 | Search everywhere | `Double Shift` or `Ctrl + T` ||
-
 | Open settings | `Ctrl + Alt + S` ||
 | Open Bookmark windows | `Alt + 2` ||
 
