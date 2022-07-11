@@ -1,6 +1,6 @@
 # Shortcuts
 
-## Rider and Visaul Studio
+## Rider and Resharper
 
 ### Navigate from symbols
 | Action   |      Rider shortcut | VS + Resharper ShortCut |
@@ -13,7 +13,7 @@
 |----------|:-------------:|:-------------:|
 | Run | `Ctrl + F5` ||
 | Debug | `Alt + F5` ||
-| Open breakpoint window | `Ctrl + Alt + B` ||
+| Open breakpoints window | `Ctrl + Alt + B` ||
 
 ### Manage projects and solutions
 | Action   |      Rider shortcut | VS + Resharper ShortCut |
@@ -24,7 +24,17 @@
 | Action   |      Rider shortcut | VS + Resharper ShortCut |
 |----------|:-------------:|:-------------:|
 | Rename | `F2` ||
+| Refactor this | `Ctrl + Shift + R` ||
 
+
+### Editor
+| Action   |      Rider shortcut | VS + Resharper ShortCut |
+|----------|:-------------:|:-------------:|
+| Format code | `Ctrl + K , D` or `Ctrl + K , Ctrl + D` |
+| Move line up | `Alt + ↑` ||
+| Move line down | `Alt + ↓` ||
+| Expanse all | `Ctrl + M, A` or `Ctrl + M, Ctrl + A` ||
+| Collapse all | `Ctrl + M + X` or `Ctrl + M, Ctrl + X` ||
 
 | Action   |      Rider shortcut | VS + Resharper ShortCut |
 |----------|:-------------:|:-------------:|
@@ -34,9 +44,7 @@
 | Run | `Ctrl + F5` ||
 | Debug | `Alt + F5` ||
 | Search everywhere | `Double Shift` or `Ctrl + T` ||
-| Format code | `Ctrl + K + D` | `Ctrl + K + D` |
-| Move line up | `Alt + ↑` ||
-| Move line down | `Alt + ↓` ||
+
 | Open settings | `Ctrl + Alt + S` ||
 | Open Bookmark windows | `Alt + 2` ||
 
