@@ -25,7 +25,7 @@ For more mothods and details see [mozila page](https://developer.mozilla.org/en-
 |----------|:-------------:|:-------------|
 | 400 | Bad request | |
 | 401 | Unauthorized | |
-| 404 | Not found | In API this meands that a endpoind is valid, but the resource does not exist. |
+| 404 | Not found | In API this means that a endpoint is valid, but the resource does not exist. |
 | 408 | Request timeout | |
 | 429 | Too many requests | |
 
@@ -35,7 +35,7 @@ For more mothods and details see [mozila page](https://developer.mozilla.org/en-
 | 500 | Internal server error | |
 | 503 | Service unavailable | |
 
-For more detailed description on other codes see [mozila pages](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status#information_responses).
+For more detailed description on other codes see [mozilla pages](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status#information_responses).
 
 ## Rules to create API endpoint
 - it is a good practice to create Dto based on operation, e.g. `PointOfInterestsDto.cs` for read, `PointOfInterestsForCreateDto.cs` for create operation, `PointOfInterestsForUpdateDto.cs` for update operation.
