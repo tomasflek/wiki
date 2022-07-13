@@ -39,7 +39,18 @@ For more detailed description on other codes see [mozilla pages](https://develop
 
 ## Rules to create API endpoint
 - it is a good practice to create Dto based on operation, e.g. `PointOfInterestsDto.cs` for read, `PointOfInterestsForCreateDto.cs` for create operation, `PointOfInterestsForUpdateDto.cs` for update operation.
-- if a create operation is called, it is a good practice to reurn created object on JSON response - call `return CreatedAtRoute` method
+- if a create operation is called, it is a good practice to reurn created object on JSON response - call `return CreatedAtRoute` method:
+``` csharp
+[HttpPost("add")]
+public ActionResult AddExpense(ExpenseAddDto expensDto)
+{
+    ExpenseDto createdExpense = _storageProvider.AddExpense(expensDto);
+    if (createdExpense == null)
+        return StatusCode(500, "Expense could not be created ... internal server error");
+
+    return CreatedAtRoute(nameof(GetExpense), new { id = createdExpense.Id }, createdExpense);
+}
+```
 
 **Validations**
 - use [build in](https://docs.microsoft.com/en-us/aspnet/web-api/overview/formats-and-model-binding/model-validation-in-aspnet-web-api) validation
