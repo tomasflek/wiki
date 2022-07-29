@@ -13,3 +13,5 @@
 - [Links](/links.md)
 - [Tools](/tools.md)
 - [ASP API](/code/api.md)
+- [F#](/code/fsharp.md)
+- [Resharper tips/tricks](/code/resharper.md)
