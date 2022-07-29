@@ -8,7 +8,7 @@
 - [Design Patterns](/code/designPatterns.md)
 - [Code samples](/code/codeSamples.md)
 - [SQL samples](/code/sqlSamples.md)
-- [SQL samples](/code/newtonsoftJson.md)
+- [Json.NET](/code/NewtonsoftJson.md)
 - [Other notes](/other.md)
 - [Links](/links.md)
 - [Tools](/tools.md)
