@@ -16,3 +16,6 @@
 
 ### [Login to docker registry](https://docs.docker.com/engine/reference/commandline/login/)
 `docker login [OPTIONS] [SERVER]`
+
+### [Fetch docker logs](https://docs.docker.com/engine/reference/commandline/logs/)
+`docker logs [OPTIONS] CONTAINER`
