@@ -68,3 +68,9 @@ REG DELETE “HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execu
 ## Network monitoring
 * NetSpot (WiFi channels monitor)
 * WireShark
+
+
+# MacOs applications
+
+* [Lightshot](https://app.prntscr.com/en/help.html) (Screenshots)
+* [muCommander](http://www.mucommander.com/)
