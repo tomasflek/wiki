@@ -24,11 +24,12 @@ Undo
 REG DELETE “HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\notepad.exe” /v “Debugger” /f
 ```
 
-
-
 * [Visual Studio Code](https://code.visualstudio.com/)
 * [Visual Studio](https://visualstudio.microsoft.com/) + [Resharper](https://www.jetbrains.com/resharper/)
 * [Rider](https://www.jetbrains.com/rider/)
+
+## Development tools
+* [TailViewer](https://kittyfisto.github.io/Tailviewer/)
 
 ## Source code managers
 * GitHub Desktop
