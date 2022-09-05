@@ -21,6 +21,26 @@ Shows inheritance hierarchy.
 
 ![Explore type hierarchy](pics/exploreTypeHierarchy.png)
 
+## [Navigate in inheritance hierarchy]()
+
+**ReSharper | Navigate | Go to Implementation(s)**  
+`Alt + End`
+
+**ReSharper | Navigate | Go to Super Method**  
+`Alt + Home`
+
+## [Find Usages of Symbols](https://www.jetbrains.com/help/resharper/Navigation_and_Search__Finding_Usages__Finding_Usages_of_a_Symbol.html)
+
+`Shift + F12` `(ReSharper_FindUsages)`
+
+Finds all usages of a symbol in the solution and referenced assemblies.
+
+## [Go to File Member](https://www.jetbrains.com/help/resharper/Navigation_and_Search__Go_to_File_Member.html)
+
+`Alt + \` `(ReSharper_GotoFileMember)`
+
+You can use this command to quickly find a particular method, field, property in current class and base classes.
+
 ## [Generate type members](https://www.jetbrains.com/help/resharper/Generating_Type_Members.html)
 
 **ReSharper | Edit | Generate Code**  
@@ -46,9 +66,11 @@ The command shows all available refactorings.
 
 ## [Show action list](https://www.jetbrains.com/help/resharper/Actions_List.html#action_list)
 
-`Alt + Enter`
+`Alt + Enter` `(ReSharper_AltEnter)`
 
 Shows suggested actions (only if [Code inspections](https://www.jetbrains.com/help/resharper/Code_Analysis__Code_Inspections.html) is enabled, otherwise shows only context actions and surround actions.)
+
+![Show action list](pics/actionList.png)
 
 ## [Multiple cursors and selection ranges](https://www.jetbrains.com/help/rider/Multicursor.html)
 
