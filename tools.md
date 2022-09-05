@@ -24,11 +24,12 @@ Undo
 REG DELETE “HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\notepad.exe” /v “Debugger” /f
 ```
 
-
-
 * [Visual Studio Code](https://code.visualstudio.com/)
 * [Visual Studio](https://visualstudio.microsoft.com/) + [Resharper](https://www.jetbrains.com/resharper/)
 * [Rider](https://www.jetbrains.com/rider/)
+
+## Development tools
+* [TailViewer](https://kittyfisto.github.io/Tailviewer/)
 
 ## Source code managers
 * GitHub Desktop
@@ -67,3 +68,9 @@ REG DELETE “HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execu
 ## Network monitoring
 * NetSpot (WiFi channels monitor)
 * WireShark
+
+
+# MacOs applications
+
+* [Lightshot](https://app.prntscr.com/en/help.html) (Screenshots)
+* [muCommander](http://www.mucommander.com/)
