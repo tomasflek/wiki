@@ -19,3 +19,4 @@
 - [Docker](/docker.md)
 - [Linux](/linux.md)
 - [Vagrant](/vagrant.md)
+- [Scala](/code/scala.md)
