@@ -6,3 +6,6 @@
 
 ### Revert any changes
 `git reset --hard`
+
+### Hard reset specific branch
+`reset repoName/branchName --hard`
