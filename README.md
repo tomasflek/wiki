@@ -20,3 +20,8 @@
 - [Linux](/linux.md)
 - [Vagrant](/vagrant.md)
 - [Scala](/code/scala.md)
+
+
+# Home assistant
+
+- [Layout](/homeassistant/layout.md)
