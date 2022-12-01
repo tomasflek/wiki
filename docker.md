@@ -31,3 +31,6 @@ Docker provides a single command that will clean up any resources — images, co
 
 To additionally remove any stopped containers and all unused images (not just dangling images), add the -a flag to the command.  
 `docker system prune -a`
+
+Save docker image to tar file  
+`docker image save -o images.tar home-organizer`
