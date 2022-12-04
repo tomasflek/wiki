@@ -37,3 +37,6 @@ Save docker image to tar file
 
 Build docker image  
 `docker build --rm -f BlazorClientApp/Dockerfile -t blazor-app .`
+
+Change image tag  
+`docker tag blazor-app home-organizer`
