@@ -33,8 +33,8 @@
 | Format code | `Ctrl + K , D` or `Ctrl + K , Ctrl + D` |
 | Move line up | `Alt + ↑` ||
 | Move line down | `Alt + ↓` ||
-| Expanse all | `Ctrl + M, A` or `Ctrl + M, Ctrl + A` | `Ctrl + M, Ctrl + A` |
-| Collapse all | `Ctrl + M + X` or `Ctrl + M, Ctrl + X` |  `Ctrl + M, Ctrl + O` |
+| Expanse all | `Ctrl + M, A` or `Ctrl + M, Ctrl + A` | `Ctrl + M, Ctrl + L` |
+| Collapse all | `Ctrl + M + X` or `Ctrl + M, Ctrl + X` |  `Ctrl + M, Ctrl + A` |
 
 | Action   |      Rider shortcut | VS + Resharper ShortCut |
 |----------|:-------------:|:-------------:|
