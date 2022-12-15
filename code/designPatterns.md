@@ -6,7 +6,7 @@
 
 ## Strategy pattern
 
-Ussage:
+Usage:
 ``` csharp
 Calculator calculator = new Calculator(new OparationAdd());
 Console.WriteLine(calculator.Execute(10, 15.4));

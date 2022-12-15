@@ -41,3 +41,29 @@ content: |-
     {% endif %}
     ({{total}}) Lights ON
 ```
+
+## Sun
+
+![Dawn and dusk](pics/sun.png)
+
+
+``` yaml
+type: custom:mushroom-chips-card
+chips:
+  - type: entity
+    entity: sun.sun
+  - type: template
+    content: >-
+      Východ  {% if states.sun.sun %} {{
+      (as_timestamp(states.sun.sun.attributes.next_rising)) |
+      timestamp_custom(('%H:%M') )}} {% endif %}
+    icon: mdi:weather-sunset-up
+  - type: template
+    content: >-
+      Západ  {% if states.sun.sun %} {{
+      (as_timestamp(states.sun.sun.attributes.next_setting)) |
+      timestamp_custom(('%H:%M') )}} {% endif %}
+    icon: mdi:weather-sunset-down
+alignment: center
+
+```
