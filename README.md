@@ -20,7 +20,7 @@
 - [Linux](/linux.md)
 - [Vagrant](/vagrant.md)
 - [Scala](/code/scala.md)
-- [Scala](/code/entityFramework.md)
+- [Entity Framework](/code/entityFramework.md)
 
 
 # Home assistant
