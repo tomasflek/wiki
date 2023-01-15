@@ -26,3 +26,7 @@
 # Home assistant
 
 - [Layout](/homeassistant/layout.md)
+
+# Windows Server
+
+- [Core Server clean installation](/winServer/coreInitialConfiguration.md)
