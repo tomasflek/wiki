@@ -158,3 +158,17 @@ Then finally if we want to create instance of `RestApiClient` class, we call `Ge
 ``` csharp
 var apiClient = serviceProvider.GetService<IRestApiClient>();
 ```
+
+## .NET 6 Minimal API Web server
+
+```csharp
+var app = WebApplication.Create();
+app.MapGet("/", () => "Hello World!");
+app.MapGet("api/variable", () => new
+{
+    Variable = "test value"
+});
+
+await app.RunAsync();
+
+```
