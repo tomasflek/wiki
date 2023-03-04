@@ -41,7 +41,12 @@ REG DELETE “HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execu
 
 ## Video and Picture:
 * VLC
+
+## Picture
 * IrfanView
+
+## Sound
+* [Audacity](https://www.audacityteam.org/)
 
 ## Other tools
 * FoxitReader
