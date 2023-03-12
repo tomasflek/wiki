@@ -2,4 +2,5 @@
 
 ## Lerp and Inverse Lerp
 
-![Animated GIF](pics/lerp.gif)
+![Lerp and Inverse lerp](pics/lerp.gif)
+![Inverse lerp in more detail](pics/inverseLerp.gif)
