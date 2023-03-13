@@ -15,4 +15,4 @@
 ### Export/Import
 File | Manage IDE Settings | Import Settings  
 File | Manage IDE Settings | Export Settings  
-[Exported file](raider_settings.zip)
+[Exported file](code/raider_settings.zip)
