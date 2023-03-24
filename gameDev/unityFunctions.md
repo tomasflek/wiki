@@ -22,3 +22,10 @@ InvokeRepeating(nameof(SpawnAnimal), startDelay, spawnInterval);
 ``` csharp
 Instantiate(animal, animal.transform.position, animal.transform.rotation);
 ```
+
+Get orthographic camera size
+```csharp
+Camera cam    = Camera.main;
+float  height = 2f * cam.orthographicSize;
+float  width  = height * cam.aspect;
+```
