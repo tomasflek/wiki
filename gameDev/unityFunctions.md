@@ -12,3 +12,13 @@ transform.Translate(Vector3.right * (horizontal * Time.deltaTime * speed));
 
 ![Lerp and Inverse lerp](pics/lerp.gif)
 ![Inverse lerp in more detail](pics/inverseLerp.gif)
+
+## Other functions
+
+``` csharp
+InvokeRepeating(nameof(SpawnAnimal), startDelay, spawnInterval);
+```
+
+``` csharp
+Instantiate(animal, animal.transform.position, animal.transform.rotation);
+```
