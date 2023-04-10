@@ -5,49 +5,52 @@ Generic singleton class. Use this class whenever you need just one instance of g
 ``` csharp
 public abstract class UnitySingleton<T> : MonoBehaviour where T : Component
 {
-    #region Fields
+	#region Fields
 
-    private static T _instance;
+	private static T _instance;
 
-    #endregion
+	#endregion
 
-    #region Properties
+	#region Properties
 
-    public static T Instance
-    {
-        get
-        {
-            if (_instance == null)
-            {
-                _instance = FindObjectOfType<T>();
-                if (_instance == null)
-                {
-                    // Create instance of gameObject and attach this script to it.
-                    GameObject obj = new GameObject();
-                    obj.name = typeof(T).Name;
-                    _instance = obj.AddComponent<T>();
-                }
-            }
-            return _instance;
-        }
-    }
+	public static T Instance
+	{
+		get
+		{
+			if (_instance == null)
+			{
+				_instance = FindObjectOfType<T>();
+				if (_instance == null)
+				{
+					// Create instance of gameObject and attach this script to it.
+					GameObject obj = new GameObject();
+					obj.name = typeof(T).Name;
+					_instance = obj.AddComponent<T>();
+				}
+			}
 
-    #endregion
+			return _instance;
+		}
+	}
 
-    #region Methods
-    protected virtual void Awake()
-    {
-        // Make sure only one copy is persisted even during scene change.
-        if (_instance == null)
-        {
-            _instance = this as T;
-            DontDestroyOnLoad(gameObject);
-        }
-        else
-        {
-            Destroy(gameObject);
-        }
-    }
-    #endregion
+	#endregion
+
+	#region Methods
+
+	protected virtual void Awake()
+	{
+		// Make sure only one copy is persisted even during scene change.
+		if (_instance == null)
+		{
+			_instance = this as T;
+			DontDestroyOnLoad(gameObject);
+		}
+		else
+		{
+			Destroy(gameObject);
+		}
+	}
+
+	#endregion
 }
 ```
