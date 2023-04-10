@@ -3,51 +3,51 @@
 Generic singleton class. Use this class whenever you need just one instance of gameObject in game, no matter of scene.
 
 ``` csharp
-    public abstract class UnitySingleton<T> : MonoBehaviour where T : Component
+public abstract class UnitySingleton<T> : MonoBehaviour where T : Component
+{
+    #region Fields
+
+    private static T _instance;
+
+    #endregion
+
+    #region Properties
+
+    public static T Instance
     {
-        #region Fields
-
-        private static T _instance;
-
-        #endregion
-
-        #region Properties
-
-        public static T Instance
+        get
         {
-            get
-            {
-                if (_instance == null)
-                {
-                    _instance = FindObjectOfType<T>();
-                    if (_instance == null)
-                    {
-                        // Create instance of gameObject and attach this script to it.
-                        GameObject obj = new GameObject();
-                        obj.name = typeof(T).Name;
-                        _instance = obj.AddComponent<T>();
-                    }
-                }
-                return _instance;
-            }
-        }
-
-        #endregion
-
-        #region Methods
-        protected virtual void Awake()
-        {
-            // Make sure only one copy is persisted even during scene change.
             if (_instance == null)
             {
-                _instance = this as T;
-                DontDestroyOnLoad(gameObject);
+                _instance = FindObjectOfType<T>();
+                if (_instance == null)
+                {
+                    // Create instance of gameObject and attach this script to it.
+                    GameObject obj = new GameObject();
+                    obj.name = typeof(T).Name;
+                    _instance = obj.AddComponent<T>();
+                }
             }
-            else
-            {
-                Destroy(gameObject);
-            }
+            return _instance;
         }
-        #endregion
     }
+
+    #endregion
+
+    #region Methods
+    protected virtual void Awake()
+    {
+        // Make sure only one copy is persisted even during scene change.
+        if (_instance == null)
+        {
+            _instance = this as T;
+            DontDestroyOnLoad(gameObject);
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+    }
+    #endregion
+}
 ```
