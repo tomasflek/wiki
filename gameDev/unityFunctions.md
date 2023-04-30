@@ -13,6 +13,8 @@ transform.Translate(Vector3.right * (horizontal * Time.deltaTime * speed));
 ![Lerp and Inverse lerp](pics/lerp.gif)
 ![Inverse lerp in more detail](pics/inverseLerp.gif)
 
+Nice [examples and explanations](https://gamedevbeginner.com/the-right-way-to-lerp-in-unity-with-examples/) for Lerp
+
 ## Other functions
 
 ``` csharp
