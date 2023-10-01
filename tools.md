@@ -44,6 +44,7 @@ REG DELETE “HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execu
 
 ## Picture
 * IrfanView
+* XnViewMP
 
 ## Sound
 * [Audacity](https://www.audacityteam.org/)
@@ -63,11 +64,12 @@ REG DELETE “HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execu
 * MS Office
 * 7zip
 * ESET
+* Greenshot (Screenpresso alternative)
 
 ## Backup and Restore
 * Marcium Reflect Free edition
 
-## Wndows Server admin
+## Windows Server admin
 * Windows Admin Center
 
 ## Network monitoring
