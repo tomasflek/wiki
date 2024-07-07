@@ -2,13 +2,34 @@
 
 ## Custom buttons
 
-### Simple custom button
+### Simple custom button 1
 ![image](https://github.com/tomasflek/wiki/assets/29582051/3dc6b213-cc65-421c-8b4d-5682aa42f579)
 
 ``` Jinja
 type: custom:button-card
 entity: switch.bathroom_switch_left
 name: Koupelna
+styles:
+  card:
+    - width: 100px
+    - height: 100px
+```
+
+### Simple custom button 1
+![image](https://github.com/tomasflek/wiki/assets/29582051/45f1b107-02b6-4fef-8942-67a93c82c8a3)![image](https://github.com/tomasflek/wiki/assets/29582051/ac76ed12-94cc-437e-bc0b-5469ef2bfb4b)
+
+
+
+``` Jinja
+type: custom:button-card
+entity: switch.bathroom_switch_left
+name: Koupelna
+color_type: card
+state:
+  - value: 'off'
+    color: white
+  - value: 'on'
+    color: rgb(235, 219, 52)
 styles:
   card:
     - width: 100px
