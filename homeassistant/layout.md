@@ -1,5 +1,20 @@
 # Layout cheat sheet
 
+## Custom buttons
+
+### Simple custom button
+![image](https://github.com/tomasflek/wiki/assets/29582051/3dc6b213-cc65-421c-8b4d-5682aa42f579)
+
+``` Jinja
+type: custom:button-card
+entity: switch.bathroom_switch_left
+name: Koupelna
+styles:
+  card:
+    - width: 100px
+    - height: 100px
+```
+
 ## Change color based on state
 
 ``` Jinja
