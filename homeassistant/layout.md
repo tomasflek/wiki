@@ -15,10 +15,8 @@ styles:
     - height: 100px
 ```
 
-### Simple custom button 1
-![image](https://github.com/tomasflek/wiki/assets/29582051/45f1b107-02b6-4fef-8942-67a93c82c8a3)![image](https://github.com/tomasflek/wiki/assets/29582051/ac76ed12-94cc-437e-bc0b-5469ef2bfb4b)
-
-
+### Simple custom button 2
+![image](https://github.com/tomasflek/wiki/assets/29582051/ebd43865-5060-424a-841b-cb2259ad25be)
 
 ``` Jinja
 type: custom:button-card
